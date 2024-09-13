@@ -30,14 +30,14 @@ nav > a:hover {
   color: black;
 }
 
-.nav-link-home, .nav-link-about {
+.nav-link-home, .nav-link-about, .nav-link-vans {
   font-weight: 600;
   font-size: 1em;
   color: #4D4D4D;
 }
 
-.nav-link-home {
-  padding: 1em;
+.nav-link-home, .nav-link-about {
+  padding-right: 1em;
 }
 
 /* Footer */

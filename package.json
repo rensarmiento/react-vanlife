@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "miragejs": "^0.2.0-alpha.3",
     "react-router-dom": "^6.26.2"
   }
 }

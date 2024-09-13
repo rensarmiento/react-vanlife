@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import './App.css'
 import Home from "./pages/Home"
 import About from "./pages/About"
+import Vans from "./pages/Vans"
+import './server'
 
 function App() {
 
@@ -12,10 +14,12 @@ function App() {
       <Link className='nav-link-title' to="/">#VANLIFE</Link>    
       <Link className='nav-link-home' to="/">Home</Link>    
       <Link className='nav-link-about' to="/about">About</Link>    
+      <Link className='nav-link-vans' to="/vans">Vans</Link>    
     </nav>
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/about" element={<About />}/>
+        <Route path="/vans" element={<Vans />}/>
       </Routes>
     <footer className='footer'>
       <h2 className="copyright">Ⓒ 2022 #VANLIFE</h2>
