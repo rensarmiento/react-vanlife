@@ -13,6 +13,10 @@
 
 nav > a {
   text-decoration: none;
+  font-weight: 600;
+  font-size: 1em;
+  color: #4D4D4D;
+  padding: .375rem 1.25rem;
 }
 
 nav > a:hover {
@@ -265,3 +269,47 @@ nav > a:hover {
   text-decoration: none;
 }
 
+/* Van Detail*/
+.van-detail-container {
+  padding: 1.25rem;
+  margin-block: 3rem;
+}
+
+.van-detail {
+  margin: 3rem;
+  width: 50%;
+  max-width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.van-detail img {
+  border-radius: 5px;
+  margin-block: 3rem;
+}
+
+.van-detail h2 {
+  font-size: 2rem;
+  margin-bottom: .625rem;
+}
+
+.van-detail .van-price {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.van-detail .van-price span {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.van-detail .link-button {
+  background-color: #FF8C38;
+  color: white;
+  font-size: 1.125rem;
+}
+
+.van-detail .van-tag:hover {
+  cursor:default;
+}
