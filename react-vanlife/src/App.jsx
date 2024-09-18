@@ -9,6 +9,7 @@ import Layout from './components/Layout'
 import Dashboard from './pages/Host/Dashboard'
 import Income from './pages/Host/Income'
 import Reviews from './pages/Host/Reviews'
+import HostLayout from './pages/Host/HostLayout'
 import './server'
 
 function App() {
@@ -21,16 +22,14 @@ function App() {
           <Route path="/about" element={<About />}/>
           <Route path="/vans" element={<Vans />}/>
           <Route path="/vans/:id" element={<VanDetail />}/>
-          
-          <Route path="/host" element={<Dashboard />}>
-            <Route path="/host/income" element={<Income />}/>
-            <Route path="/host/reviews" element={<Reviews />}/>
+
+          <Route path="host" element={<HostLayout />}>
+            <Route index element={<Dashboard />}/>
+            <Route path="income" element={<Income />}/>
+            <Route path="reviews" element={<Reviews />}/>
           </Route>
         </Route>
       </Routes>
-    <footer className='footer'>
-      <h2 className="copyright">Ⓒ 2022 #VANLIFE</h2>
-    </footer>
     </BrowserRouter> 
   )
 }

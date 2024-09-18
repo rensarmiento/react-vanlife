@@ -1,32 +1,31 @@
 
 /* Navbar */
-.navbar {
-  width: auto;
+header {
   height: 5rem;
   background-color: #FFF7ED;
   display: flex;
-  justify-content: left;
-  align-items: center;
+  justify-content: space-between;
   padding: 0 1.625rem;
   font-family: Inter, sans-serif;
+  padding-block: 10px;
 }
 
-nav > a {
+
+header a {
   text-decoration: none;
-  font-weight: 600;
-  font-size: 1em;
   color: #4D4D4D;
-  padding: .375rem 1.25rem;
+  font-weight: 600;
+  padding: 5px 20px;
 }
 
-nav > a:hover {
+header a:hover {
   text-decoration: underline;
   color: #161616;
 }
 
 
 
-.nav-link-title {
+.nav-title {
   font-family: Inter, sans-serif;
   font-weight: 900;
   font-size: 1.625rem;
@@ -34,14 +33,11 @@ nav > a:hover {
   color: black;
 }
 
-.nav-link-home, .nav-link-about, .nav-link-vans {
-  font-weight: 600;
-  font-size: 1em;
-  color: #4D4D4D;
-}
 
-.nav-link-home, .nav-link-about {
-  padding-right: 1em;
+a.active-link {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #161616;
 }
 
 /* Footer */
@@ -312,4 +308,12 @@ nav > a:hover {
 
 .van-detail .van-tag:hover {
   cursor:default;
+}
+
+/* Host */
+
+.navbar a:hover {
+  color: #161616;
+  text-decoration: underline;
+  font-weight: 600;
 }
