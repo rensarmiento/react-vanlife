@@ -5,32 +5,32 @@
   font-weight: 400;
   font-size: 16px;
 
-
-/* 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424; */
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} */
 
 #root {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
-
 html, body {
-  margin: 0;
-  padding: 0;
-  background-color: #FFF7ED;
-  font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF7ED;
+    font-family: "Inter", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 body {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+main {
+  padding: 0 1.625rem;
 }

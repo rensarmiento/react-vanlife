@@ -1,5 +1,12 @@
 export default function Income() {
     return (
-        <><h1>Reviews page here!</h1></>
+        <div className="box-container">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     )
 }
